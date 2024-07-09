@@ -83,7 +83,7 @@ html::-webkit-scrollbar{
 
 /* Login */
 .wrapper {
-  margin: auto;
+  margin: 0 auto;
   position: relative;
   height: 440px;
   width: 440px;
@@ -528,7 +528,8 @@ html::-webkit-scrollbar{
 .heading6{
   font-size: 30px;
   font-weight: bold;
-  margin-top: 70px;
+  margin-top: 150px;
+  margin-bottom: 20px;
 }
 .heading6 span{
   color: #0b421a;
@@ -589,13 +590,10 @@ html::-webkit-scrollbar{
   }
   
 }
-/* contact */
+/* Contact */
 
 
-
-
-
-/* blogs */
+/* Blogs */
 .blogs{
   width: 100%;
   background: #f7f5f2;
@@ -607,30 +605,25 @@ html::-webkit-scrollbar{
   font-weight: bold;
 }
 .blogs h1 span{
-  color: #b2744c;
+  color: #0b421a;
 }
 .blogs .container{
   margin-top: 60px;
 }
 .blogs h5{
-  color: #b2744c;
+  color: #0b421a;
 }
 #blogbtn{
   width: 200px;
   height: 36px;
   border: none;
   color: white;
-  background: #b2744c;
+  background: #0b421a;
   cursor: pointer;
 }
-/* blogs */
+/* Blogs */
 
-
-
-
-
-
-/* footer */
+/* Footer */
 #footer{
   width: 100%;
   background: #ffffff;
@@ -654,7 +647,7 @@ html::-webkit-scrollbar{
 }
 
 
-/* footer */
+/* Footer */
 html{
   scroll-behavior: smooth;
 }
