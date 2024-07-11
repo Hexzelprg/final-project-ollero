@@ -1,3 +1,15 @@
+window.addEventListener("load", () => {
+    const loader = document.querySelector(".loader");
+  
+setTimeout(() => {
+    loader.classList.add("loader--hidden");
+}, 4000);
+    
+    loader.addEventListener("transitionend", () => {
+      document.body.removeChild(loader);
+    });
+  });
+
 let menu = document.querySelector('#menu-icon');
 let navlist = document.querySelector('.navlist');
 
@@ -52,3 +64,5 @@ function validateLogin() {
 function register() {
     alert("Registration Unavailable");
 }
+
+
