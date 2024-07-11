@@ -48,3 +48,7 @@ function validateLogin() {
         return false; 
     }
 }
+
+function register() {
+    alert("Registration Unavailable");
+}

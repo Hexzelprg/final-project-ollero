@@ -109,9 +109,9 @@ header {
     height: 440px;
     width: 440px;
     background: transparent;
-    border: 2px solid #0b421a;
+    border: 2px solid var(--main-color);
     border-radius: 20px;
-    backdrop-filter: blur(20px);
+    backdrop-filter: blur(70px);
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
     display: flex;
     justify-content: center;
@@ -162,7 +162,7 @@ header {
     right: 0;
     width: 45px;
     height: 45px;
-    background: #0b421a;
+    background: var(--main-color);
     font-size: 2em;
     color: white;
     display: flex;
@@ -176,7 +176,7 @@ header {
   .form-box h2 {
     font-size: 2em;
     font-weight: 700;
-    color: black;
+    color: var(--text-color);
     text-align: center;
 }
   
@@ -184,7 +184,7 @@ header {
     position: relative;
     width: 100%;
     height: 50px;
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid var(--text-color);
     margin: 30px 0;
 }
   
@@ -194,7 +194,7 @@ header {
     left: 5px;
     transform: translateY(-50%);
     font-size: 1em;
-    color: black;
+    color: var(--text-color);
     font-weight: 500;
     pointer-events: none;
     transition: .5s;
@@ -212,7 +212,7 @@ header {
     border: none;
     outline: none;
     font-size: 1em;
-    color: #0b421a;
+    color: var(--text-color);
     font-weight: 600;
     padding: 0 35px 0 5px;
 }
@@ -221,13 +221,13 @@ header {
     position: absolute;
     right: 8px;
     font-size: 1.2em;
-    color: #0b421a;
+    color: var(--main-color);
     line-height: 57px;
 }
   
   .remember-forgot {
     font-size: .9em;
-    color: black;
+    color: var(--text-color);
     font-weight: 500;
     margin: -15px 0 15px;
     display: flex;
@@ -235,7 +235,7 @@ header {
 }
   
   .remember-forgot label input {
-    accent-color: #0b421a;
+    accent-color: var(--main-color);
 }
   
   .remember-forgot a {
@@ -251,7 +251,7 @@ header {
   .bttn {
     width: 100%;
     height: 45px;
-    background: white;
+    background: transparent;
     border: none;
     outline: none;
     border: 2px solid black;
