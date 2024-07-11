@@ -1,439 +1,331 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Starbucks Coffee</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
-    <!-- Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <!-- Bootstrap -->
-    <!-- Google Font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
-    <!-- Google Font -->
-</head>
-<body>
-  <div class="all-content">
-   
-  <!-- Navbar -->
-  <nav class="navbar sticky-top navbar-expand-lg" id="navbar">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#" id="logo"><img src="./images/logo.png" alt=""></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span><i class="fa-solid fa-bars" style="color: black; font-size: 23px;"></i></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#about">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#menu">Menu</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#product">Product</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#gallary">Gallary</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#contact">Contact</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#blogs">Blogs</a>
-          </li>
-         
-         
-         
-        </ul>
-        <form class="d-flex">
-          <button class="btnLogin-popup">Login</button>
-        </form>
-      </div>
-    </div>
-  </nav>
-<!-- Navbar -->
-
-<!-- Login -->
-<div class="wrapper">
-  <span class="icon-close"><ion-icon name="close"></ion-icon></span>
-
-  <div class="form-box login">
-    <h2>Login</h2>
-    <form action="#">
-      <div class="input-box">
-        <span class="icon"><ion-icon name="mail"></ion-icon></span>
-        <input type="email" required>
-        <label>Email</label>
-      </div>
-      <div class="input-box">
-        <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
-        <input type="password" required>
-        <label>Password</label>
-      </div>
-      <div class="remember-forgot">
-        <label><input type="checkbox">
-        Remember Me</label>
-        <a href="#">Forgot Password?</a>
-      </div>
-      <button type="submit" class="bttn">Login</button>
-      <div class="login-register">
-        <p>Don't have an account?
-        <a href="#" class="register-link">Register</a></p>
-      </div>
-    </form>
-  </div>
-<!-- Login -->
-
-<!-- Register -->
-  <div class="form-box register">
-    <h2>Registration</h2>
-    <form action="#">
-      <div class="input-box">
-        <span class="icon"><ion-icon name="person"></ion-icon></span>
-        <input type="text" required>
-        <label>Username</label>
-      </div>
-      <div class="input-box">
-        <span class="icon"><ion-icon name="mail"></ion-icon></span>
-        <input type="text" required>
-        <label>Email</label>
-      </div>
-      <div class="input-box">
-        <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
-        <input type="password" required>
-        <label>Password</label>
-      </div>
-      <div class="remember-forgot">
-        <label><input type="checkbox">
-        Agree to the Terms & Conditions</label>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Starbucks Coffee</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <!-- Icons -->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet"/>
+        <!-- Icons -->
+        <!-- Google Font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <!-- Google Font -->
+    </head>
+    <body>
         
-      </div>
-      <button type="submit" class="bttn">Register</button>
-      <div class="login-register">
-        <p>Already have an account?
-        <a href="#" class="login-link">Login</a></p>
-      </div>
-    </form>
-  </div>
-</div>
-<!-- Register -->
+        <!-- Header -->
+        <header>
+            <a href="#" class="logo">
+                <img src="./images/logo.png">
+            </a>
 
-<!-- Home -->
-   <section id="home">
-    <div class="content">
-      <h3>Start Your Day With a <br> Fresh Coffee</h3>
-      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero, fugit
-         <br>ipsum dolor sit amet consectetur.
-      </p>
-      <button id="btn">Shop Now</button>
-    </div>
-   </section>
+            <ul class="navlist">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">Socials</a></li>
+                <li><a href="#">Blogs</a></li>
+                <li><a href="#">Location</a></li>
+            </ul>
 
-<!-- Home -->
+            <div class="nav-content">
+                <a href="#"><i class="ri-search-line"></i></a>
+                <a href="#"><i class="ri-user-fill"></i></a>
+                <a href="#"><i class="ri-heart-2-fill"></i></a>
+                <a href="#"><i class="ri-shopping-bag-fill"></i></a>
 
-<!-- About section -->
-<div class="about" id="about">
-  <div class="container">
-  <div class="heading">About <span>Us</span></div>
-    <div class="row">
-      <div class="col-md-6">
-        <div class="card">
-          <img src="./images/about.png" alt="">
-        </div>
-      </div>
-      <div class="col-md-6">
-        <h3>What Makes Our Drinks Special?</h3><br>
-        <p>Most of the things what goes inside your Starbucks Drinks are imported, unlike CCD & other brands they dont use things like Monin Syrups, Arun Ice Cream, Nandini Milk. Starbucks has production plants all around the globe who manufacture ingredients which goes inside to make coffee. And we can only use them to make your drink eg,. Syrups either come from Australia or Malaysia, Caramel from Britain, Chocolates from Netherlands etc,.
-         </p><br>
-         <button id="about-btn">Learn More</button>
-      </div>
-    </div>
-  </div>
-</div>
-<!-- About section -->
+                <box-icon name='menu' id="menu-icon"></box-icon>
+            </div>
+        </header>
+        <!-- Header -->
 
-<!-- Top cards -->
-<section class="top-cards">
-  <div class="heading2">Top <span>Categories</span></div>
-  <div class="container">
-    <div class="row">
-      <div class="col-md-4 py-3 py-md-0">
-        <div class="card">
-          <img src="./images/c1.png" alt="">
-          
-        </div>
-      </div>
-      <div class="col-md-4 py-3 py-md-0">
-        <div class="card">
-          <img src="./images/c2.png" alt="">
-          
-        </div>
-      </div>
-      <div class="col-md-4 py-3 py-md-0">
-        <div class="card">
-          <img src="./images/c3.png" alt="">
-          
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- Top cards -->
+        <!-- Hero -->
+        <section class="hero">
+            <div class="hero-text">
+                <h4>Cafe Company</h4>
+                <h1>Starbucks Coffee</h1>
+                <p>Starbucks Corporation is an American multinational chain of coffeehouses and roastery reserves headquartered in Seattle, Washington. 
+                <br> It was founded in 1971, and is currently the world's largest coffeehouse chain.</p>
 
-<!-- menu -->
-<section class="menu" id="menu">
-  <div class="container">
-  <div class="heading3">Menu</div>
-</div>
-  <div class="container" id="container2">
-  <div class="row">
-    <div class="col-md-3 py-3 py-md-0">
-      <div class="card">
-        <img src="./images/m1.png" alt="">
-        <div class="card-body">
-          <div class="star text-center">
-            <i class="fa-regular fa-star"></i>
-            <i class="fa-regular fa-star"></i>
-            <i class="fa-regular fa-star"></i>
-            <i class="fa-regular fa-star"></i>
-            <i class="fa-regular fa-star"></i>
-          </div>
-          <h3>White Chocolate Macadamia Cream Cold Brew</h3>
-          <p>$99 <strike>$100</strike> <span><i class="fa-solid fa-cart-shopping"></i></span></p>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-3 py-3 py-md-0">
-      <div class="card">
-        <img src="./images/m2.png" alt="">
-        <div class="card-body">
-          <div class="star text-center">
-            <i class="fa-regular fa-star"></i>
-            <i class="fa-regular fa-star"></i>
-            <i class="fa-regular fa-star"></i>
-            <i class="fa-regular fa-star"></i>
-            <i class="fa-regular fa-star"></i>
-          </div>
-          <h3>Cinnamon Caramel Cream Cold Brew</h3><br>
-          <p>$90 <strike>$110</strike> <span><i class="fa-solid fa-cart-shopping"></i></span></p>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-3 py-3 py-md-0">
-      <div class="card">
-        <img src="./images/m3.png" alt="">
-        <div class="card-body">
-          <div class="star text-center">
-            <i class="fa-regular fa-star"></i>
-            <i class="fa-regular fa-star"></i>
-            <i class="fa-regular fa-star"></i>
-            <i class="fa-regular fa-star"></i>
-            <i class="fa-regular fa-star"></i>
-          </div>
-          <h3>Coffee</h3>
-          <p>$100 <strike>$200</strike> <span><i class="fa-solid fa-cart-shopping"></i></span></p>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-3 py-3 py-md-0">
-      <div class="card">
-        <img src="./images/m4.png" alt="">
-        <div class="card-body">
-          <div class="star text-center">
-            <i class="fa-regular fa-star"></i>
-            <i class="fa-regular fa-star"></i>
-            <i class="fa-regular fa-star"></i>
-            <i class="fa-regular fa-star"></i>
-            <i class="fa-regular fa-star"></i>
-          </div>
-          <h3>Coffee</h3>
-          <p>₱120 <strike>₱150</strike> <span><i class="fa-solid fa-cart-shopping"></i></span></p>
-        </div>
-      </div>
-    </div>
-  </div>
+                <a href="#" class="btn">LEARN MORE</a>
+            </div>
+        </section>
+        <!-- Hero -->
 
-  <div class="row" style="margin-top: 50px;">
-    <div class="col-md-3 py-3 py-md-0">
-      <div class="card">
-        <img src="./images/m5.png" alt="">
-        <div class="card-body">
-          <div class="star text-center">
-            <i class="fa-regular fa-star"></i>
-            <i class="fa-regular fa-star"></i>
-            <i class="fa-regular fa-star"></i>
-            <i class="fa-regular fa-star"></i>
-            <i class="fa-regular fa-star"></i>
-          </div>
-          <h3>Coffee</h3>
-          <p>₱200 <strike>₱300</strike> <span><i class="fa-solid fa-cart-shopping"></i></span></p>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-3 py-3 py-md-0">
-      <div class="card">
-        <img src="./images/m6.png" alt="">
-        <div class="card-body">
-          <div class="star text-center">
-            <i class="fa-regular fa-star"></i>
-            <i class="fa-regular fa-star"></i>
-            <i class="fa-regular fa-star"></i>
-            <i class="fa-regular fa-star"></i>
-            <i class="fa-regular fa-star"></i>
-          </div>
-          <h3>Coffee</h3>
-          <p>₱30 <strike>₱50</strike> <span><i class="fa-solid fa-cart-shopping"></i></span></p>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-3 py-3 py-md-0">
-      <div class="card">
-        <img src="./images/m7.png" alt="">
-        <div class="card-body">
-          <div class="star text-center">
-            <i class="fa-regular fa-star"></i>
-            <i class="fa-regular fa-star"></i>
-            <i class="fa-regular fa-star"></i>
-            <i class="fa-regular fa-star"></i>
-            <i class="fa-regular fa-star"></i>
-          </div>
-          <h3>Coffee</h3>
-          <p>₱100 <strike>₱200</strike> <span><i class="fa-solid fa-cart-shopping"></i></span></p>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-3 py-3 py-md-0">
-      <div class="card">
-        <img src="./images/m8.png" alt="">
-        <div class="card-body">
-          <div class="star text-center">
-            <i class="fa-regular fa-star"></i>
-            <i class="fa-regular fa-star"></i>
-            <i class="fa-regular fa-star"></i>
-            <i class="fa-regular fa-star"></i>
-            <i class="fa-regular fa-star"></i>
-          </div>
-          <h3>Coffee</h3>
-          <p>₱120 <strike>₱150</strike> <span><i class="fa-solid fa-cart-shopping"></i></span></p>
-        </div>
-      </div>
-    </div>
-  </div>
-  </div>
-</section>
-<!-- Menu -->
+        <!-- Store -->
+        <section class="store">
+            <div class="center-text">
+                <h6>A Wake up Call in every Sip</h6>
+                <h2>Visit our Store</h2>
+            </div>
 
-<!-- Product -->
-<section id="product" class="product">
-  <div class="container">
-  <div class="heading4">Products</div>
-</div>
-  <div class="container" id="container3">
+            <div class="store-content">
+                <div class="col">
+                    <div class="col-img">
+                        <img src="./images/houseblend.png">
+                    </div>
 
-    <div class="row">
-      <div class="col-md-3 py-3 py-md-0">
-        <div class="card">
-          <img src="./images/houseblend.png" alt="">
-          <div class="card-body">
-            <h3>House Blend Coffee</h3>
-          <p>₱200 <strike>₱230</strike> <span><i class="fa-solid fa-cart-shopping"></i></span></p>
+                    <div class="col-text">
+                        <h4>House Blend Coffee</h4>
+                        <p>Aroma, body and flavor all in balance. House Blend is a medium roast with notes of toffee and dusted cocoa.</p>
+                    </div>
+                </div>
 
-          </div>
-        </div>
-      </div>
-      <div class="col-md-3 py-3 py-md-0">
-        <div class="card">
-          <img src="./images/espressoroast.png" alt="">
-          <div class="card-body">
-            <h3>Espresso Roast Coffee</h3>
-          <p>₱250 <strike>₱350</strike> <span><i class="fa-solid fa-cart-shopping"></i></span></p>
+                <div class="col">
+                    <div class="col-img">
+                        <img src="./images/caramel.png">
+                    </div>
 
-          </div>
-        </div>
-      </div>
-      <div class="col-md-3 py-3 py-md-0">
-        <div class="card">
-          <img src="./images/caramel.png" alt="">
-          <div class="card-body">
-            <h3>Caramel Coffee</h3>
-          <p>₱230 <strike>₱280</strike> <span><i class="fa-solid fa-cart-shopping"></i></span></p>
+                    <div class="col-text">
+                        <h4>Caramel Coffee</h4>
+                        <p>Bask in the delectable buttery and smooth sweetness of this flavored coffee.</p>
+                    </div>
+                </div>
 
-          </div>
-        </div>
-      </div>
-      <div class="col-md-3 py-3 py-md-0">
-        <div class="card">
-          <img src="./images/italianroast.png" alt="">
-          <div class="card-body">
-            <h3>Italian Roast Coffee</h3>
-          <p>₱320 <strike>₱380</strike> <span><i class="fa-solid fa-cart-shopping"></i></span></p>
+                <div class="col">
+                    <div class="col-img">
+                        <img src="./images/italianroast.png">
+                    </div>
 
-          </div>
-        </div>
-      </div>
-    </div>
+                    <div class="col-text">
+                        <h4>Italian Roast Coffee</h4>
+                        <p>A dark roast with sweet undertones that leads to a depth of flavor.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Store -->
 
-  </div>
-</section>
-<!-- Product -->
+        <!-- Banner -->
+        <section class="banner">
+            <div class="banner-content">
+                <div class="banner-box">
+                    <div class="banner-img">
+                        <img src="./images/whole2.png">
 
-<!-- Contact -->
-<section class="contact" id="contact">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-7">
-       <div class="heading6">Contact <span>Us</span></div>
+                        <div class="banner-in">
+                            <h5>Our Menu</h5>
+                            <h3>Whole Bean</h3>
+                            <a href="#" class="b-btnn">Visit</a>
+                        </div>
+                    </div>
+                </div>
 
-       <input class="form-control" type="text" placeholder="Name" aria-label="default input example"><br>
-       <input class="form-control" type="email" placeholder="Email" aria-label="default input example"><br>
-       <input class="form-control" type="number" placeholder="Number" aria-label="default input example"><br>
-       <button id="contact-btn">Send Message</button>
-      </div>
-      <div class="col-md-5" id="col">
+                <div class="banner-box">
+                    <div class="banner-img">
+                        <img src="./images/drinks2.png">
 
-      </div>
-    </div>
-  </div>
+                        <div class="banner-in">
+                            <h5>Our Menu</h5>
+                            <h3>Drinks</h3>
+                            <a href="#" class="b-btnn">Visit</a>
+                        </div>
+                    </div>
+                </div>
 
-</section>
-<!-- Contact -->
+                <div class="banner-box">
+                    <div class="banner-img">
+                        <img src="./images/food2.png">
 
-   <!-- Social -->
-   <div class="elfsight-app-8939c99b-cbd5-4636-bf99-f090d743d60a" data-elfsight-app-lazy></div>
-   <!-- Social -->
+                        <div class="banner-in">
+                            <h5>Our Menu</h5>
+                            <h3>Food</h3>
+                            <a href="#" class="b-btnn">Visit</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Banner -->
 
-   <!-- Footer -->
-   <footer id="footer">
-    <div class="footer-logo text-center"><img src="./images/logo.png" alt=""></div>
-    <div class="socail-links text-center">
-      <i class="fa-brands fa-twitter" style="color: #0b421a;"></i>
-      <i class="fa-brands fa-facebook" style="color: #0b421a;"></i>
-      <i class="fa-brands fa-instagram" style="color: #0b421a;"></i>
-      <i class="fa-brands fa-youtube" style="color: #0b421a;"></i>
-      <i class="fa-brands fa-tiktok" style="color: #0b421a;"></i>
-    </div>
-    <div class="copyright text-center"><br>
-      &copy; Copyright <strong><span>Starbucks</span></strong>. All Rights Reserved
-  </div>
-</footer>
-   <!-- Footer -->
+        <!-- Seller -->
+        <section class="seller">
+            <div class="center-text">
+                <h6>Popular Products</h6>
+                <h2>Best Sellers</h2>
+            </div>
 
-   <a href="#" class="arrow"><i><img src="./images/up-arrow.png" alt="" width="50px"></i></a>
+                <div class="seller-content">
+                    <div class="row">
+                        <div class="row-img">
+                            <img src="./images/s1.png">
+                    </div>
+                        <h5>Turkey, Provolone & Pesto on Ciabatta</h5>
+                        <h6>₱200</h6>
 
+                    <div class="s-btn">
+                        <a href="#">
+                            Add to Cart
+                            <i class="ri-shopping-cart-fill"></i>
+                        </a>
+                    </div>
+                    </div>
 
-  </div>
-  <script src="script.js"></script>
-   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-   <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
-   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-</body>
+                    <div class="row">
+                        <div class="row-img">
+                            <img src="./images/s2.png">
+                        </div>
+                        <h5>Spinach, Feta & Egg White Wrap</h5>
+                        <h6>₱200</h6>
+
+                    <div class="s-btn">
+                        <a href="#">
+                            Add to Cart
+                            <i class="ri-shopping-cart-fill"></i>
+                        </a>
+                    </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="row-img">
+                            <img src="./images/s3.png">
+                        </div>
+                        <h5>Butter Croissant</h5>
+                        <h6>₱200</h6>
+
+                    <div class="s-btn">
+                        <a href="#">
+                            Add to Cart
+                            <i class="ri-shopping-cart-fill"></i>
+                        </a>
+                    </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="row-img">
+                            <img src="./images/s4.png">
+                        </div>
+                        <h5>Matcha Crème Frappuccino</h5>
+                        <h6>₱200</h6>
+
+                    <div class="s-btn">
+                        <a href="#">
+                            Add to Cart
+                            <i class="ri-shopping-cart-fill"></i>
+                        </a>
+                    </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="row-img">
+                            <img src="./images/s5.png">
+                        </div>
+                        <h5>Iced Caramel Macchiato</h5>
+                        <h6>₱200</h6>
+
+                    <div class="s-btn">
+                        <a href="#">
+                            Add to Cart
+                            <i class="ri-shopping-cart-fill"></i>
+                        </a>
+                    </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="row-img">
+                            <img src="./images/s6.png">
+                        </div>
+                        <h5>Strawberry Crème Frappuccino</h5>
+                        <h6>₱200</h6>
+
+                    <div class="s-btn">
+                        <a href="#">
+                            Add to Cart
+                            <i class="ri-shopping-cart-fill"></i>
+                        </a>
+                    </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="row-img">
+                            <img src="./images/s7.png">
+                        </div>
+                        <h5>Caramel Frappuccino</h5>
+                        <h6>₱200</h6>
+
+                    <div class="s-btn">
+                        <a href="#">
+                            Add to Cart
+                            <i class="ri-shopping-cart-fill"></i>
+                        </a>
+                    </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="row-img">
+                            <img src="./images/s8.png">
+                        </div>
+                        <h5>Hot Chocolate</h5>
+                        <h6>₱200</h6>
+
+                    <div class="s-btn">
+                        <a href="#">
+                            Add to Cart
+                            <i class="ri-shopping-cart-fill"></i>
+                        </a>
+                    </div>
+                    </div> 
+                </div>
+        </section>
+        <!-- Seller -->
+
+        <!-- CTA -->
+        <section class="cta">
+            <div class="cta-content">
+                <h2>Enjoy the Delicous Taste</h2>
+                <p>“With every cup, with every conversation, with every community we nurture the limitless possibilities of human connection.”</p>
+                <a href="#" class="cta-btn">Order Now</a>
+            </div>
+        </section>
+        <!-- CTA -->
+
+        <!-- Blog -->
+        <section class="blog">
+            <div class="center-text">
+                <h6>Blog & News</h6>
+                <h2>Our Blogs</h2>
+            </div>
+            <div class="elfsight-app-8939c99b-cbd5-4636-bf99-f090d743d60a" data-elfsight-app-lazy></div>
+        </section>
+        <!-- Blog -->
+
+        <!-- Footer -->
+        <section class="footer">
+            <div class="footer-box">
+                <a href="#" class="logo">
+                    <img src="./images/logo.png">
+                </a>
+
+                <h5>© 2024 Starbucks Coffee Company. All rights reserved.</h5>
+
+                <div class="icons">
+                    <a href="https://www.facebook.com/Starbucks"><i class="ri-facebook-circle-fill"></i></a>
+                    <a href="https://www.instagram.com/starbucks/?hl=en"><i class="ri-instagram-fill"></i></a>
+                    <a href="https://x.com/starbucks?lang=en"><i class="ri-twitter-x-fill"></i></a>
+                    <a href="https://www.tiktok.com/@starbucks?lang=en"><i class="ri-tiktok-fill"></i></a>
+                    <a href="https://www.youtube.com/@starbucks"><i class="ri-youtube-fill"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-box">
+                <h3>Useful Links</h3>
+                <li><a href="#">Privacy Notice</a></li>
+                <li><a href="#">Consumer Health Privacy Notice</a></li>
+                <li><a href="#">Terms of Use</a></li>
+                <li><a href="#">CA Supply Chain Act</a></li>
+                <li><a href="#">Accessibility</a></li>
+            </div>
+        </section>
+        <!-- Footer -->
+
+        <!-- JS -->
+        <script src="script.js"></script>
+        <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+        <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+        <!-- JS -->
+    </body>
 </html>
