@@ -46,16 +46,16 @@
   
             <div class="form-box login">
                 <h2>Login</h2>
-            <form action="#">
+                <form onsubmit="return validateLogin()">
                 <div class="input-box">
                     <span class="icon"><i class="ri-mail-fill"></i></span>
-                    <input type="email" required>
+                    <input type="email" id="email" required>
                     <label>Email</label>
                 </div>
 
                 <div class="input-box">
                     <span class="icon"><i class="ri-lock-2-fill"></i></span>
-                    <input type="password" required>
+                    <input type="password" id="password"required>
                     <label>Password</label>
                 </div>
 
@@ -94,7 +94,7 @@
                     <label>Password</label>        
                 </div>
                 <div class="remember-forgot">
-                    <label><input type="checkbox">
+                    <label><input type="checkbox" required>
                         Agree to the Terms & Conditions</label>
                     </div>     
                     <button type="submit" class="bttn">Register</button>

@@ -33,4 +33,18 @@ iconClose.addEventListener('click', ()=> {
     wrapper.classList.remove('active-popup');
 });
 
+function validateLogin() {
+    const hardcodedEmail = "seanollero@gmail.com";
+    const hardcodedPassword = "password123";
 
+    const email = document.getElementById("email").value;
+    const password = document.getElementById("password").value;
+
+    if (email === hardcodedEmail && password === hardcodedPassword) {
+        alert("Login successful!");
+        return true;
+    } else {
+        alert("Invalid email or password!");
+        return false; 
+    }
+}

@@ -103,7 +103,7 @@ header {
 /* Login */
 
 .wrapper {
-    margin-top: 300px;
+    margin-top: 250px;
     margin-left: 700px;
     position: fixed;
     height: 440px;
@@ -767,6 +767,13 @@ section {
     .wrapper {
         margin-top: 100px;
         margin-left: 450px;
+    }
+}
+
+@media(max-width: 720px){
+    .wrapper {
+        margin-top: 200px;
+        margin-left: 150px;
     }
 }
 
